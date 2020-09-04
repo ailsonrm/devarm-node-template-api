@@ -1,3 +1,9 @@
+import Sample from '@models/Sample'
+
 test('it should be ok', () => {
-    expect(1 + 1).toBe(2);
-});
+  const sample = new Sample()
+
+  sample.message = 'sample testing'
+
+  expect(sample.message).toEqual('sample testing')
+})

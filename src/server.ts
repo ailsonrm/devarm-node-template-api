@@ -1,12 +1,12 @@
-import express from 'express';
-const actuator = require('express-actuator');
-import routes from './routes';
+import express from 'express'
+import routes from './routes'
+const actuator = require('express-actuator')
 
-const app = express();
+const app = express()
 
-app.use(actuator());
-app.use(express.json());
-app.use(routes);
+app.use(actuator())
+app.use(express.json())
+app.use(routes)
 
-const port = (process.env.PORT || 3333);
-app.listen(port, () => console.log("Listening on port " + port));
+const port = (process.env.PORT || 3333)
+app.listen(port, () => console.log('Listening on port ' + port))
